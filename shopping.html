@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+	 <script src="shopping.js"></script>
+    <title>SHOPPING</title>
+</head>
+<body>
+    <ul>
+        <li><a  href="index.html">Home</a></li>
+        <li><a  href="items.html">Items</a></li>
+        <li><a class="active" href="shopping.html">Shopping</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+		<br/> <br/><br/>
+		<h1><center>MALLAHA PHONE STORE</center></h2>
+    </ul>
+    <div>
+        <br>
+        <br>
+        <table id="shoppingtable">
+            <tr id="str">
+                <th class="sth">BRAND</th>
+                <th class="sth">ITEMS</th>
+                <th class="sth">No of Items</th>
+                <th class="sth">Cost</th>
+            </tr>
+            <tr>
+                <td class="std"><input type="checkbox" id="item1" name="item1" onclick="item1CheckBox()">
+                    <label for="item1"> IPHONE</label><br>
+                </td>
+                <td class="std">
+                    <input type="radio" id="pr1" name="propertyitem1" value="500" onclick="item1RadioChange(this);">
+                    <label for="pr1"> IPHONE XMAX (500$)</label><br>
+                    <input type="radio" id="pr2" name="propertyitem1" value="870" onclick="item1RadioChange(this);">
+                    <label for="pr2">IPHONE 13 MINI (870$)</label><br>
+                    <input type="radio" id="pr3" name="propertyitem1" value="800" onclick="item1RadioChange(this);">
+                    <label for="pr3">IPHONE 12 (800$)</label><br/>
+					 <input type="radio" id="pr3" name="propertyitem1" value="190" onclick="item1RadioChange(this);">
+                    <label for="pr3">IPHONE 7PLUS (190$)</label>
+                </td>
+                <td class="std">
+                    <select  id="noofunitsitem1" onchange="item1Change()">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                </td>
+                <td>
+                    <p id="totalcostitem1">0</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="std"><input type="checkbox" id="item2" name="item2" onclick="item2CheckBox()">
+                    <label for="item2"> SAMSUNG</label><br>
+                </td>
+                <td>
+                    <input type="radio" id="pr1item2" name="propertyitem2" value="690" onclick="item2RadioChange(this);">
+                    <label for="pr1item2">SAMSUNG S20 PRO (690$)</label><br>
+                    <input type="radio" id="pr2item2" name="propertyitem2" value="490" onclick="item2RadioChange(this);">
+                    <label for="pr2item2">SAMSUNG S10 (490$)</label><br>
+                    <input type="radio" id="pr3item2" name="propertyitem2" value="550" onclick="item2RadioChange(this);">
+                    <label for="pr3item2">SAMSUNG 20 (550$)</label><br/>
+					 <input type="radio" id="pr3item2" name="propertyitem2" value="200" onclick="item2RadioChange(this);">
+                    <label for="pr3item2">SAMSUNG A71 (200$)</label><br/>
+                </td>
+                <td class="std">
+                    <select  id="noofunitsitem2" onchange="item2Change()">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                </td>
+                <td class="std">
+                    <p id="totalcostitem2">0</p>
+                </td>
+            </tr>
+            <tr class="str">
+                <td class="std"><input type="checkbox" id="item3" name="item3" onclick="item3CheckBox()">
+                    <label for="item3"> REDMI</label><br>
+                </td>
+                <td class="std">
+                    <input type="radio" id="pr1item3" name="propertyitem3" value="350" onclick="item3RadioChange(this);">
+                    <label for="pr1item3">REDMI NOTE 9 (350$)</label><br>
+                    <input type="radio" id="pr2item3" name="propertyitem3" value="400" onclick="item3RadioChange(this);">
+                    <label for="pr2item3">REDMI NOTE 9PRO (400$)</label><br>
+                    <input type="radio" id="pr3item3" name="propertyitem3" value="600" onclick="item3RadioChange(this);">
+                    <label for="pr3item3">REDMI NOTE 12 SERIES(600$)</label><br/>
+					<input type="radio" id="pr3item3" name="propertyitem3" value="500" onclick="item3RadioChange(this);">
+                    <label for="pr3item3">REDMI Mi 11 (500$)</label>
+                </td>
+                <td class="std">
+                    <select  id="noofunitsitem3" onchange="item3Change()">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                </td>
+                <td class="std">
+                    <p id="totalcostitem3">0</p>
+                </td>
+            </tr>
+            <tr class="str">
+                <td class="std"><input type="checkbox" id="item4" name="item4" onclick="item4CheckBox()">
+                    <label for="item4"> NOKIA</label><br>
+                </td>
+                <td class="std">
+                    <input type="radio" id="pr1item4" name="propertyitem4" value="90" onclick="item4RadioChange(this);">
+                    <label for="pr1item4">NOKIA 2.4 (90$)</label><br>
+                    <input type="radio" id="pr2item4" name="propertyitem4" value="190" onclick="item4RadioChange(this);">
+                    <label for="pr2item4">NOKIA C01 PLUS (190$)</label><br>
+                    <input type="radio" id="pr3item4" name="propertyitem4" value="250" onclick="item4RadioChange(this);">
+                    <label for="pr3item4">NOKIA C20(250$)</label><br/>
+					<input type="radio" id="pr3item4" name="propertyitem4" value="150" onclick="item4RadioChange(this);">
+                    <label for="pr3item4">NOKIA 2.7 (150$)</label>
+                </td>
+                <td class="std">
+                    <select  id="noofunitsitem4" onchange="item4Change()">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                </td>
+                <td class="std">
+                    <p id="totalcostitem4">0</p>
+                </td>
+            </tr>
+            <tr class="str">
+                <td colspan="2">Total Cost (After 15% discount)</td>
+                <td><button onclick="calculateTotalCostAfterDiscount()">Calculate</button></td>
+                <td><p id="totalcostafterdiscount">0</p></td>
+            </tr>
+
+        </table>
+       
+    </div>
+   
+</body>
+</html>
